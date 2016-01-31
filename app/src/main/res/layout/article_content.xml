@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/article_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#222"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:text="Opinion: Traveling to the stars might not be mankind's destiny after all"/>
+
+
+    <TextView
+        android:id="@+id/article_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="#666"
+        android:textSize="14sp"
+        android:text="Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA"
+        />
+
+</LinearLayout>
