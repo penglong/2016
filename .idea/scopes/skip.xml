@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="skip" pattern="!file:*intermediates*/&amp;&amp;!file:*generated*/" />
+</component>

@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         mDrawer = (DrawerLayout) findViewById(R.id.drawer_layout);
 
         if (toolbar != null) {
-            setSupportActionBar(toolbar);
+            //setSupportActionBar(toolbar);
 
             final ActionBar actionBar = getSupportActionBar();
             if (actionBar != null) {
