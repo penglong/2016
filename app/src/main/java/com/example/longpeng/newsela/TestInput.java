@@ -22,6 +22,32 @@ public class TestInput {
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/cigarette-buyingage-d0cd12b1.jpg.460x258_q90_box-0%2C544%2C5179%2C3456_crop_detail.jpg",
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/clinton-celebrities-7a73af49.jpg.460x258_q90_box-169%2C765%2C4490%2C3197_crop_detail.jpg",
 
+            //war
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/frenchjews-skullcap-6a826229.jpg.460x258_q90_box-0%2C1315%2C4491%2C3840_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2015/12/onemillion-migrants-6e4a39f2.jpg.460x258_q90_box-171%2C171%2C5710%2C3286_crop_detail.jpg",
+            //science
+            "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.460x258_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg",
+            "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2015/06/cuttlefish-camouflage-ca9e8e42.jpg.460x258_q90_box-0%2C168%2C1366%2C936_crop_detail.jpg",
+            //kid
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/girlscout-bball-1007292a.jpg.460x258_q90_box-0%2C65%2C3000%2C1752_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/tomatopickers-humanrights-e23070a3.jpg.460x259_q90_box-0%2C30%2C3000%2C1721_crop_detail.jpg",
+            //money
+            "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/afterschool-program-9982edab.jpg.460x258_q90_box-0%2C215%2C3000%2C1904_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/ramsfootball-mansion-a1bba003.jpg.460x258_q90_box-0%2C195%2C3000%2C1882_crop_detail.jpg",
+            //law
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/clinton-celebrities-7a73af49.jpg.460x258_q90_box-169%2C765%2C4490%2C3197_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/salem-witch-2a24c38d.jpg.460x258_q90_box-0%2C90%2C2356%2C1415_crop_detail.jpg",
+            //health
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/cigarette-buyingage-d0cd12b1.jpg.460x258_q90_box-0%2C544%2C5179%2C3456_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/dietary-guidelines-03941569.jpg.460x258_q90_box-0%2C312%2C2973%2C1984_crop_detail.jpg",
+            //art
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/dali-vr-583da409.jpg.460x258_q90_box-0%2C134%2C1366%2C902_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/juanes-johnlegend-b376f504.jpg.460x258_q90_box-1632%2C351%2C4896%2C2186_crop_detail.jpg",
+            //sport
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/superbowl-homeless-c9bd9a93.jpg.460x258_q90_box-0%2C0%2C1366%2C767_crop_detail.jpg",
+            "https://d284gedng9vuu0.cloudfront.net/article_media/2016/01/lightsaber-class-cf4b6da2.jpg.460x258_q90_box-0%2C315%2C2997%2C2000_crop_detail.jpg",
+            "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/superbowl-homeless-c9bd9a93.jpg.460x258_q90_box-0%2C0%2C1366%2C767_crop_detail.jpg",
+
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/juanes-johnlegend-b376f504.jpg.460x258_q90_box-1632%2C351%2C4896%2C2186_crop_detail.jpg",
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/superbowl-homeless-c9bd9a93.jpg.460x258_q90_box-0%2C0%2C1366%2C767_crop_detail.jpg",
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/challenger-anniversary-fb904581.jpeg.460x258_q90_box-0%2C95%2C2996%2C1778_crop_detail.jpg",
@@ -36,9 +62,17 @@ public class TestInput {
             "Opinion: Traveling to other planets will be very hard"
     };
 
-    static final String url_big = "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.885x496_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg";
+        static final int[] counts = {
+                417, 666, 867, 963, 1200
+        };
+
+        static final String url_big = "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.885x496_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg";
+
+    static final String author = "By Scientific American, adapted by Newsela staff";
+    static final String date = "01.20.16";
+
     static final String[] subject = {
-            "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
+            "People dream about going to the stars. Scientist Konstantin Tsiolkovsky wrote that people will eventually live in space. He said that Earth was our \"cradle.\" \"You’re not meant to stay in your cradle forever,” said Tsiolkovsky.",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",

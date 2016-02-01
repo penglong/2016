@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public CharSequence getPageTitle(int position) {
                 switch (position % 4) {
                     case 0:
-                        return "Science";
+                        return "Highlights";
                     case 1:
                         return "Money";
                     case 2:
@@ -151,7 +151,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickPhoto() {
-        Intent intent = new Intent(this, DetailActivity.class);
+        //Intent intent = new Intent(this, DetailActivity.class);
+        Intent intent = new Intent(this, ScreenSlidePagerActivity.class);
         startActivity(intent);
+
     }
 }

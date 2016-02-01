@@ -78,7 +78,8 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHold
                 Uri url = Uri.parse(TestInput.urls[(position + page*2)%8]);
                 Picasso.with(context).load(url).into(holder.imageView);
                 holder.tv_title.setText(TestInput.titles[3]);
-                holder.tv_more.setText(TestInput.subject[3]);
+                holder.tv_more.setText(TestInput.date + "  " + TestInput.subject[0]);
+                //holder.tv_more.setText(TestInput.author);
                 holder.imageView.setTag(position);
                 holder.imageView.setOnClickListener(new MyOnClickListener());
 
