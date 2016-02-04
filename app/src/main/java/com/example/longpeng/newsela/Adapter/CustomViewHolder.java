@@ -1,9 +1,11 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.longpeng.newsela.R;
 
 /**
  * Created by longpeng on 1/31/16.

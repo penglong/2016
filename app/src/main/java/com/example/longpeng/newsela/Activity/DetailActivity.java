@@ -1,8 +1,10 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Activity;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.example.longpeng.newsela.R;
+import com.example.longpeng.newsela.TestingData;
 import com.klinker.android.sliding.SlidingActivity;
 
 /**
@@ -25,9 +27,9 @@ public class DetailActivity extends SlidingActivity {
         setImage(R.drawable.moon);
 
         TextView tv_title = (TextView) findViewById(R.id.article_title);
-        tv_title.setText(TestInput.titles[0]);
+        tv_title.setText(TestingData.titles[0]);
 
         TextView tv = (TextView) findViewById(R.id.article_content);
-        tv.setText(TestInput.article[0]);
+        tv.setText(TestingData.article[0]);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.longpeng.newsela.Adapter.RecyclerViewAdapter;
+import com.example.longpeng.newsela.R;
 import com.github.florent37.materialviewpager.MaterialViewPagerHelper;
 import com.github.florent37.materialviewpager.adapter.RecyclerViewMaterialAdapter;
 
@@ -49,7 +51,7 @@ public class RecyclerViewFragment extends Fragment {
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
 
-        TestRecyclerViewAdapter tAdapter = new TestRecyclerViewAdapter(mContentItems, getContext());
+        RecyclerViewAdapter tAdapter = new RecyclerViewAdapter(mContentItems, getContext());
         tAdapter.setPage(mPage);
         mAdapter = new RecyclerViewMaterialAdapter(tAdapter);
         mRecyclerView.setAdapter(mAdapter);

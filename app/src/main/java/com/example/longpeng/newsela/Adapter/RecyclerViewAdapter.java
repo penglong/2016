@@ -1,4 +1,4 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Adapter;
 
 import android.content.Context;
 import android.net.Uri;
@@ -7,6 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.longpeng.newsela.MainActivity;
+import com.example.longpeng.newsela.R;
+import com.example.longpeng.newsela.TestingData;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -14,7 +17,7 @@ import java.util.List;
 /**
  * Created by longpeng on 1/31/16.
  */
-public class TestRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> {
+public class RecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHolder> {
 
     List<Object> contents;
     Context mContext;
@@ -24,7 +27,7 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHold
 
     private int page;
 
-    public TestRecyclerViewAdapter(List<Object> contents, Context context) {
+    public RecyclerViewAdapter(List<Object> contents, Context context) {
         this.contents = contents;
         this.mContext = context;
     }
@@ -75,11 +78,11 @@ public class TestRecyclerViewAdapter extends RecyclerView.Adapter<CustomViewHold
         switch (getItemViewType(position)) {
             case TYPE_HEADER:
                 Context context = holder.imageView.getContext();
-                Uri url = Uri.parse(TestInput.urls[(position + page*2)%8]);
+                Uri url = Uri.parse(TestingData.urls[(position + page*2)%8]);
                 Picasso.with(context).load(url).into(holder.imageView);
-                holder.tv_title.setText(TestInput.titles[3]);
-                holder.tv_more.setText(TestInput.date + "  " + TestInput.subject[0]);
-                //holder.tv_more.setText(TestInput.author);
+                holder.tv_title.setText(TestingData.titles[3]);
+                holder.tv_more.setText(TestingData.date + "  " + TestingData.subject[0]);
+                //holder.tv_more.setText(TestingData.author);
                 holder.imageView.setTag(position);
                 holder.imageView.setOnClickListener(new MyOnClickListener());
 

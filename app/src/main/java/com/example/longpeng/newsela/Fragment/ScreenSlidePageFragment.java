@@ -1,4 +1,4 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -6,6 +6,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.example.longpeng.newsela.R;
+import com.example.longpeng.newsela.TestingData;
 
 /**
  * Created by longpeng on 1/31/16.
@@ -50,13 +53,13 @@ public class ScreenSlidePageFragment extends Fragment {
 
         // Set the title view to show the page number.
         ((TextView) rootView.findViewById(R.id.article_count)).setText(
-                getString(R.string.title_count, TestInput.counts[mPageNumber]));
+                getString(R.string.title_count, TestingData.counts[mPageNumber]));
 
         ((TextView) rootView.findViewById(R.id.article_level)).setText(
                 getString(R.string.title_level, mPageNumber + 1));
 
-        ((TextView) rootView.findViewById(R.id.article_title)).setText(TestInput.titles[4 - mPageNumber]);
-        ((TextView) rootView.findViewById(R.id.article_content)).setText(TestInput.article[4 - mPageNumber]);
+        ((TextView) rootView.findViewById(R.id.article_title)).setText(TestingData.titles[4 - mPageNumber]);
+        ((TextView) rootView.findViewById(R.id.article_content)).setText(TestingData.article[4 - mPageNumber]);
 
         return rootView;
     }

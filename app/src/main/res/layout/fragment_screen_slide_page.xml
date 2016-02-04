@@ -4,27 +4,36 @@
     android:layout_height="match_parent">
 
     <!-- Dummy content. -->
-    <LinearLayout android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="16dp">
 
-
-        <TextView android:id="@+id/article_count"
-            android:textStyle="bold"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:gravity="center_vertical|right"
-            android:text="Word Count 666"/>
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-        <TextView android:id="@+id/article_level"
-            android:textStyle="bold"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:gravity="center_vertical|right"
-            android:text="Level 3"/>
+            <TextView
+                android:id="@+id/article_level"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:text="level"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/article_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:text="count"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
 
         <TextView
             android:id="@+id/article_title"
@@ -32,9 +41,8 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textColor="#222"
-            android:textStyle="bold"
             android:textSize="22sp"
-            android:text="Opinion: Traveling to the stars might not be mankind's destiny after all"/>
+            android:textStyle="bold" />
 
 
         <TextView
@@ -43,9 +51,7 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:textColor="#666"
-            android:textSize="14sp"
-            android:text="Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA"
-            />
+            android:textSize="14sp" />
 
     </LinearLayout>
 

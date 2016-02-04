@@ -3,8 +3,12 @@ package com.example.longpeng.newsela;
 /**
  * Created by longpeng on 1/31/16.
  */
-public class TestInput {
-    static final String[] urls = {
+public class TestingData {
+
+    // THIS IS ONLY FOR DEMO PURPOSE
+    // When you have real data downloaded from server, stored in sqlite, you will not need this
+
+    public static final String[] urls = {
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.460x258_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg",
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2015/06/cuttlefish-camouflage-ca9e8e42.jpg.460x258_q90_box-0%2C168%2C1366%2C936_crop_detail.jpg",
 
@@ -54,7 +58,7 @@ public class TestInput {
             "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2015/06/cuttlefish-camouflage-ca9e8e42.jpg.460x258_q90_box-0%2C168%2C1366%2C936_crop_detail.jpg"
     };
 
-    static final String[] titles = {
+    public static final String[] titles = {
             "Opinion: What will it take for humans to colonize the Milky Way?",
             "Opinion: Traveling to the stars is an immense challenge",
             "Opinion: Traveling to the stars might not be mankind's destiny after all",
@@ -62,23 +66,23 @@ public class TestInput {
             "Opinion: Traveling to other planets will be very hard"
     };
 
-        static final int[] counts = {
-                417, 666, 867, 963, 1200
-        };
+    public static final int[] counts = {
+            417, 666, 867, 963, 1200
+    };
 
-        static final String url_big = "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.885x496_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg";
+    static final String url_big = "https://newsela-test-files-f331e.s3.amazonaws.com/article_media/2016/01/space-travel-4a287e11.jpg.885x496_q90_box-152%2C495%2C3000%2C2093_crop_detail.jpg";
 
     static final String author = "By Scientific American, adapted by Newsela staff";
-    static final String date = "01.20.16";
+    public static final String date = "01.20.16";
 
-    static final String[] subject = {
+    public static final String[] subject = {
             "People dream about going to the stars. Scientist Konstantin Tsiolkovsky wrote that people will eventually live in space. He said that Earth was our \"cradle.\" \"You’re not meant to stay in your cradle forever,” said Tsiolkovsky.",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA",
             "Astronaut Charles M. Duke Jr. is photographed collecting lunar samples during the Apollo 16 mission to the moon on April 16, 1972. Photo: NASA"
     };
-    static final String[] article = {
+    public static final String[] article = {
             "The idea that humans will eventually travel to and inhabit other parts of our galaxy was well expressed by the early Russian rocket scientist Konstantin Tsiolkovsky, who wrote, “Earth is humanity’s cradle, but you’re not meant to stay in your cradle forever.” Since then the idea has been a staple of science fiction, and thus become part of a consensus image of humanity’s future. Going to the stars is often regarded as humanity’s destiny, even a measure of its success as a species. But in the century since this vision was proposed, things we have learned about the universe and ourselves combine to suggest that moving out into the galaxy might not be humanity’s destiny after all.\n" +
                     "\n" +
                     "The problem that tends to underlie all the other problems with the idea is the sheer size of the universe, which was not known when people first imagined we would go to the stars. Tau Ceti, one of the closest stars to us at around 12 light-years away, is 100 billion times farther from Earth than our moon. A quantitative difference that large turns into a qualitative difference; we can’t simply send people over such immense distances in a spaceship, because a spaceship is too impoverished an environment to support humans for the time it would take, which is on the order of centuries. Instead of a spaceship, we would have to create some kind of space-traveling ark, big enough to support a community of humans and other plants and animals in a fully recycling ecological system.\n" +

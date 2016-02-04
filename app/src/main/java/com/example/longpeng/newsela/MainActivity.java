@@ -13,6 +13,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.longpeng.newsela.Activity.ScreenSlidePagerActivity;
+import com.example.longpeng.newsela.Fragment.RecyclerViewFragment;
+import com.example.longpeng.newsela.R;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
 

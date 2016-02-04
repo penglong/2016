@@ -17,19 +17,18 @@ package="com.example.longpeng.newsela"
         android:configChanges="orientation">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
-
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
     </activity>
 
     <activity
-        android:name=".DetailActivity"
+        android:name=".Activity.DetailActivity"
         android:excludeFromRecents="true"
         android:taskAffinity=""
         android:theme="@style/Theme.Sliding.Light"/>
 
     <activity
-        android:name=".ScreenSlidePagerActivity"
+        android:name=".Activity.ScreenSlidePagerActivity"
         android:parentActivityName=".MainActivity"
         android:uiOptions="splitActionBarWhenNarrow">
 

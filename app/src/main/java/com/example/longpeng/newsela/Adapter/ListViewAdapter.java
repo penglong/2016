@@ -1,4 +1,4 @@
-package com.example.longpeng.newsela;
+package com.example.longpeng.newsela.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,17 +6,19 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
+import com.example.longpeng.newsela.R;
+
 import java.util.List;
 
 /**
  * Created by longpeng on 1/31/16.
  */
-public class TestListViewAdapter extends ArrayAdapter<Object> {
+public class ListViewAdapter extends ArrayAdapter<Object> {
 
     static final int TYPE_HEADER = 0;
     static final int TYPE_CELL = 1;
 
-    public TestListViewAdapter(Context context, List<Object> objects) {
+    public ListViewAdapter(Context context, List<Object> objects) {
         super(context, 0, objects);
     }
 
